@@ -14,6 +14,20 @@
 		ED451E06224F48F8001F9F7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED451E04224F48F8001F9F7F /* LaunchScreen.storyboard */; };
 		ED451E11224F48F9001F9F7F /* mchatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451E10224F48F9001F9F7F /* mchatTests.swift */; };
 		ED451E1C224F48F9001F9F7F /* mchatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451E1B224F48F9001F9F7F /* mchatUITests.swift */; };
+		ED451E55224F4D5D001F9F7F /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = ED451E3A224F4D5D001F9F7F /* Documentation.html */; };
+		ED451E56224F4D5D001F9F7F /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E3C224F4D5D001F9F7F /* GCDAsyncSocket.m */; };
+		ED451E57224F4D5D001F9F7F /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E3E224F4D5D001F9F7F /* GCDAsyncUdpSocket.m */; };
+		ED451E59224F4D5D001F9F7F /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E43224F4D5D001F9F7F /* DDAbstractDatabaseLogger.m */; };
+		ED451E5A224F4D5D001F9F7F /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E45224F4D5D001F9F7F /* DDASLLogger.m */; };
+		ED451E5B224F4D5D001F9F7F /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E47224F4D5D001F9F7F /* DDFileLogger.m */; };
+		ED451E5C224F4D5D001F9F7F /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E4A224F4D5D001F9F7F /* DDLog.m */; };
+		ED451E5D224F4D5D001F9F7F /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E4C224F4D5D001F9F7F /* DDTTYLogger.m */; };
+		ED451E5E224F4D5D001F9F7F /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E4F224F4D5D001F9F7F /* DDContextFilterLogFormatter.m */; };
+		ED451E5F224F4D5D001F9F7F /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E51224F4D5D001F9F7F /* DDDispatchQueueLogFormatter.m */; };
+		ED451E60224F4D5D001F9F7F /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E53224F4D5D001F9F7F /* DDMultiFormatter.m */; };
+		ED451E61224F4D5D001F9F7F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED451E54224F4D5D001F9F7F /* README.txt */; };
+		ED451E69224F55B1001F9F7F /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451E68224F55B1001F9F7F /* SocketClientManager.swift */; };
+		ED451E6B224FABAE001F9F7F /* RecieveDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451E6A224FABAE001F9F7F /* RecieveDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +61,32 @@
 		ED451E17224F48F9001F9F7F /* mchatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mchatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED451E1B224F48F9001F9F7F /* mchatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mchatUITests.swift; sourceTree = "<group>"; };
 		ED451E1D224F48F9001F9F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED451E3A224F4D5D001F9F7F /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		ED451E3B224F4D5D001F9F7F /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		ED451E3C224F4D5D001F9F7F /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		ED451E3D224F4D5D001F9F7F /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		ED451E3E224F4D5D001F9F7F /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		ED451E42224F4D5D001F9F7F /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		ED451E43224F4D5D001F9F7F /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		ED451E44224F4D5D001F9F7F /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		ED451E45224F4D5D001F9F7F /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		ED451E46224F4D5D001F9F7F /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		ED451E47224F4D5D001F9F7F /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		ED451E48224F4D5D001F9F7F /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		ED451E49224F4D5D001F9F7F /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		ED451E4A224F4D5D001F9F7F /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		ED451E4B224F4D5D001F9F7F /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		ED451E4C224F4D5D001F9F7F /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		ED451E4E224F4D5D001F9F7F /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		ED451E4F224F4D5D001F9F7F /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		ED451E50224F4D5D001F9F7F /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		ED451E51224F4D5D001F9F7F /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		ED451E52224F4D5D001F9F7F /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		ED451E53224F4D5D001F9F7F /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		ED451E54224F4D5D001F9F7F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		ED451E65224F4D9F001F9F7F /* header-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "header-bridge.h"; sourceTree = "<group>"; };
+		ED451E68224F55B1001F9F7F /* SocketClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketClientManager.swift; sourceTree = "<group>"; };
+		ED451E6A224FABAE001F9F7F /* RecieveDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +117,7 @@
 		ED451DEF224F48F7001F9F7F = {
 			isa = PBXGroup;
 			children = (
+				ED451E65224F4D9F001F9F7F /* header-bridge.h */,
 				ED451DFA224F48F7001F9F7F /* mchat */,
 				ED451E0F224F48F9001F9F7F /* mchatTests */,
 				ED451E1A224F48F9001F9F7F /* mchatUITests */,
@@ -97,6 +138,9 @@
 		ED451DFA224F48F7001F9F7F /* mchat */ = {
 			isa = PBXGroup;
 			children = (
+				ED451E37224F4D5D001F9F7F /* Source */,
+				ED451E35224F4AA1001F9F7F /* client */,
+				ED451E36224F4AA1001F9F7F /* server */,
 				ED451DFB224F48F7001F9F7F /* AppDelegate.swift */,
 				ED451DFD224F48F7001F9F7F /* ViewController.swift */,
 				ED451DFF224F48F7001F9F7F /* Main.storyboard */,
@@ -123,6 +167,84 @@
 				ED451E1D224F48F9001F9F7F /* Info.plist */,
 			);
 			path = mchatUITests;
+			sourceTree = "<group>";
+		};
+		ED451E35224F4AA1001F9F7F /* client */ = {
+			isa = PBXGroup;
+			children = (
+				ED451E6A224FABAE001F9F7F /* RecieveDataManager.swift */,
+				ED451E68224F55B1001F9F7F /* SocketClientManager.swift */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		ED451E36224F4AA1001F9F7F /* server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		ED451E37224F4D5D001F9F7F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				ED451E39224F4D5D001F9F7F /* GCD */,
+				ED451E40224F4D5D001F9F7F /* Vendor */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		ED451E39224F4D5D001F9F7F /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				ED451E3A224F4D5D001F9F7F /* Documentation.html */,
+				ED451E3B224F4D5D001F9F7F /* GCDAsyncSocket.h */,
+				ED451E3C224F4D5D001F9F7F /* GCDAsyncSocket.m */,
+				ED451E3D224F4D5D001F9F7F /* GCDAsyncUdpSocket.h */,
+				ED451E3E224F4D5D001F9F7F /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		ED451E40224F4D5D001F9F7F /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				ED451E41224F4D5D001F9F7F /* CocoaLumberjack */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		ED451E41224F4D5D001F9F7F /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				ED451E42224F4D5D001F9F7F /* DDAbstractDatabaseLogger.h */,
+				ED451E43224F4D5D001F9F7F /* DDAbstractDatabaseLogger.m */,
+				ED451E44224F4D5D001F9F7F /* DDASLLogger.h */,
+				ED451E45224F4D5D001F9F7F /* DDASLLogger.m */,
+				ED451E46224F4D5D001F9F7F /* DDFileLogger.h */,
+				ED451E47224F4D5D001F9F7F /* DDFileLogger.m */,
+				ED451E48224F4D5D001F9F7F /* DDLog+LOGV.h */,
+				ED451E49224F4D5D001F9F7F /* DDLog.h */,
+				ED451E4A224F4D5D001F9F7F /* DDLog.m */,
+				ED451E4B224F4D5D001F9F7F /* DDTTYLogger.h */,
+				ED451E4C224F4D5D001F9F7F /* DDTTYLogger.m */,
+				ED451E4D224F4D5D001F9F7F /* Extensions */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		ED451E4D224F4D5D001F9F7F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED451E4E224F4D5D001F9F7F /* DDContextFilterLogFormatter.h */,
+				ED451E4F224F4D5D001F9F7F /* DDContextFilterLogFormatter.m */,
+				ED451E50224F4D5D001F9F7F /* DDDispatchQueueLogFormatter.h */,
+				ED451E51224F4D5D001F9F7F /* DDDispatchQueueLogFormatter.m */,
+				ED451E52224F4D5D001F9F7F /* DDMultiFormatter.h */,
+				ED451E53224F4D5D001F9F7F /* DDMultiFormatter.m */,
+				ED451E54224F4D5D001F9F7F /* README.txt */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +354,8 @@
 				ED451E06224F48F8001F9F7F /* LaunchScreen.storyboard in Resources */,
 				ED451E03224F48F8001F9F7F /* Assets.xcassets in Resources */,
 				ED451E01224F48F7001F9F7F /* Main.storyboard in Resources */,
+				ED451E61224F4D5D001F9F7F /* README.txt in Resources */,
+				ED451E55224F4D5D001F9F7F /* Documentation.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +380,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED451E60224F4D5D001F9F7F /* DDMultiFormatter.m in Sources */,
+				ED451E57224F4D5D001F9F7F /* GCDAsyncUdpSocket.m in Sources */,
+				ED451E56224F4D5D001F9F7F /* GCDAsyncSocket.m in Sources */,
+				ED451E5F224F4D5D001F9F7F /* DDDispatchQueueLogFormatter.m in Sources */,
+				ED451E5A224F4D5D001F9F7F /* DDASLLogger.m in Sources */,
+				ED451E5D224F4D5D001F9F7F /* DDTTYLogger.m in Sources */,
+				ED451E5B224F4D5D001F9F7F /* DDFileLogger.m in Sources */,
+				ED451E6B224FABAE001F9F7F /* RecieveDataManager.swift in Sources */,
+				ED451E5E224F4D5D001F9F7F /* DDContextFilterLogFormatter.m in Sources */,
+				ED451E5C224F4D5D001F9F7F /* DDLog.m in Sources */,
 				ED451DFE224F48F7001F9F7F /* ViewController.swift in Sources */,
 				ED451DFC224F48F7001F9F7F /* AppDelegate.swift in Sources */,
+				ED451E69224F55B1001F9F7F /* SocketClientManager.swift in Sources */,
+				ED451E59224F4D5D001F9F7F /* DDAbstractDatabaseLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +505,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "header-bridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -423,6 +560,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "header-bridge.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
