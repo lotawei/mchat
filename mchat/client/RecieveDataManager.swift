@@ -9,7 +9,8 @@
 import Foundation
 class  RecieveDataManager {
     
-    
+    public  static  var  instance = RecieveDataManager()
+    var  value:Any? = nil
     
     
     

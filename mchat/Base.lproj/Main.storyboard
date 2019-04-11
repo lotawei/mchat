@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="width" constant="202" id="6GJ-DJ-mQE"/>
                                     <constraint firstAttribute="height" constant="30" id="oxa-tb-9kM"/>
                                 </constraints>
-                                <state key="normal" title="链接"/>
+                                <state key="normal" title="连接"/>
                                 <connections>
                                     <action selector="connect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="37m-Ri-kC3"/>
                                 </connections>
@@ -35,7 +35,7 @@
                                     <constraint firstAttribute="height" constant="30" id="cIi-5u-3gG"/>
                                     <constraint firstAttribute="width" constant="202" id="l5R-ju-EYP"/>
                                 </constraints>
-                                <state key="normal" title="断开"/>
+                                <state key="normal" title="登录"/>
                                 <connections>
                                     <action selector="close:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ay9-xu-PsS"/>
                                 </connections>
@@ -66,6 +66,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.15.80:10013" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xV-B3-xfd">
+                                <rect key="frame" x="20" y="85" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3U-5p-txb">
+                                <rect key="frame" x="20" y="155" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="更改"/>
+                                <connections>
+                                    <action selector="changeip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TjI-AH-dEx"/>
+                                    <action selector="close:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nY2-UO-Atf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -86,6 +102,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btnone" destination="nVz-qU-EjO" id="6cS-i2-IUG"/>
+                        <outlet property="ipconfig" destination="6xV-B3-xfd" id="ohO-Mh-xY4"/>
                         <outlet property="recievetxt" destination="bkS-pV-ELP" id="qeZ-2s-Pek"/>
                         <outlet property="txtsendmsg" destination="Yji-wb-OvH" id="oOU-zb-PvX"/>
                     </connections>
