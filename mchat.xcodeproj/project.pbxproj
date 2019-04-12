@@ -30,7 +30,7 @@
 		ED451E60224F4D5D001F9F7F /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = ED451E53224F4D5D001F9F7F /* DDMultiFormatter.m */; };
 		ED451E61224F4D5D001F9F7F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = ED451E54224F4D5D001F9F7F /* README.txt */; };
 		ED451E69224F55B1001F9F7F /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451E68224F55B1001F9F7F /* SocketClientManager.swift */; };
-		ED451E6B224FABAE001F9F7F /* RecieveDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451E6A224FABAE001F9F7F /* RecieveDataManager.swift */; };
+		ED451E6B224FABAE001F9F7F /* DataMessageCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED451E6A224FABAE001F9F7F /* DataMessageCenter.swift */; };
 		FFCC0AAE8FEB56938A478287 /* Pods_mchatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9115D75906D388293D64E7 /* Pods_mchatUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,7 +99,7 @@
 		ED451E54224F4D5D001F9F7F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		ED451E65224F4D9F001F9F7F /* header-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "header-bridge.h"; sourceTree = "<group>"; };
 		ED451E68224F55B1001F9F7F /* SocketClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketClientManager.swift; sourceTree = "<group>"; };
-		ED451E6A224FABAE001F9F7F /* RecieveDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieveDataManager.swift; sourceTree = "<group>"; };
+		ED451E6A224FABAE001F9F7F /* DataMessageCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMessageCenter.swift; sourceTree = "<group>"; };
 		F60CF981A363DC3558F3EACE /* Pods-mchatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mchatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mchatUITests/Pods-mchatUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,7 +182,6 @@
 			children = (
 				ED451E37224F4D5D001F9F7F /* Source */,
 				ED451E35224F4AA1001F9F7F /* client */,
-				ED451E36224F4AA1001F9F7F /* server */,
 				ED451DFB224F48F7001F9F7F /* AppDelegate.swift */,
 				ED451DFD224F48F7001F9F7F /* ViewController.swift */,
 				ED451DFF224F48F7001F9F7F /* Main.storyboard */,
@@ -215,17 +214,10 @@
 			isa = PBXGroup;
 			children = (
 				1C8696CC2255FF2800CA5E33 /* SweetAlert.swift */,
-				ED451E6A224FABAE001F9F7F /* RecieveDataManager.swift */,
+				ED451E6A224FABAE001F9F7F /* DataMessageCenter.swift */,
 				ED451E68224F55B1001F9F7F /* SocketClientManager.swift */,
 			);
 			path = client;
-			sourceTree = "<group>";
-		};
-		ED451E36224F4AA1001F9F7F /* server */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = server;
 			sourceTree = "<group>";
 		};
 		ED451E37224F4D5D001F9F7F /* Source */ = {
@@ -478,6 +470,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-mchat/Pods-mchat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -485,6 +478,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -527,7 +521,7 @@
 				ED451E5A224F4D5D001F9F7F /* DDASLLogger.m in Sources */,
 				ED451E5D224F4D5D001F9F7F /* DDTTYLogger.m in Sources */,
 				ED451E5B224F4D5D001F9F7F /* DDFileLogger.m in Sources */,
-				ED451E6B224FABAE001F9F7F /* RecieveDataManager.swift in Sources */,
+				ED451E6B224FABAE001F9F7F /* DataMessageCenter.swift in Sources */,
 				ED451E5E224F4D5D001F9F7F /* DDContextFilterLogFormatter.m in Sources */,
 				ED451E5C224F4D5D001F9F7F /* DDLog.m in Sources */,
 				ED451DFE224F48F7001F9F7F /* ViewController.swift in Sources */,

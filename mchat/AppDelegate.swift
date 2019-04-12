@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
         
         
-        SocketClientManager.instance.close()
+//        SocketClientManager.instance.close()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

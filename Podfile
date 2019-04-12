@@ -8,7 +8,7 @@ target 'mchat' do
 
 		pod 'CocoaAsyncSocket'  
 	   	pod 'NVActivityIndicatorView'
-
+         pod 'SwiftyJSON'
   # Pods for mchat
 
   target 'mchatTests' do

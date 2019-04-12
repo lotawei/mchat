@@ -7,18 +7,23 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class ViewController: UIViewController {
     var  txtbuffs = ""
-    
+    var  pushtime = 2.0
     @IBOutlet weak var ipconfig: UITextField!
     @IBOutlet weak var btnone: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         chanegHost()
+        
+      
+      
         // Do any additional setup after loading the view.
     }
+ 
     
     @IBAction func changeip(_ sender: Any) {
       
@@ -91,8 +96,8 @@ class ViewController: UIViewController {
             return
         }
         
-        
-        SocketClientManager.instance.sendMsg(txt, {
+        let datatjson  = txt.data(using: .utf8)
+        SocketClientManager.instance.sendMsgByloading(datatjson!, {
             res in
             
              weak var  weakself = self
@@ -113,9 +118,20 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func close(_ sender: Any) {
+    @IBAction func loginserver(_ sender: Any) {
         
-        SocketClientManager.instance.close()
+        let   userinfo = UserItemPro.init()
+        userinfo.userid = "lotawei"
+        
+        
+        DataMessageCenter.sendLoginmsg(userinfo) { (data) in
+            
+            let   res = JSON.init(data)
+            
+            print(res.string)
+            
+            
+        }
         
         
         
