@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
  
+    @IBOutlet weak var lblname: UILabel!
+    
+    @IBOutlet weak var imgportait: UIImageView!
     
     @IBAction func changeip(_ sender: Any) {
       
@@ -107,6 +110,18 @@ class ViewController: UIViewController {
         
         
     }
+    
+   public  func  updateUserview(_ jsonstr:Any){
+        
+        let userinfo = UserItemPro.init(jsonstr)
+    
+    
+        self.lblname.text = userinfo.userphone
+        
+        
+    }
+    
+    
     func updateui(){
         
         self.recievetxt.text = self.txtbuffs
@@ -126,9 +141,8 @@ class ViewController: UIViewController {
         
         DataMessageCenter.sendLoginmsg(userinfo) { (data) in
             
-            let   res = JSON.init(data)
-            
-            print(res.string)
+            self.updateUserview(data)
+           
             
             
         }

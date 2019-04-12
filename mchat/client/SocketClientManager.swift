@@ -152,7 +152,7 @@ class SocketClientManager:NSObject,GCDAsyncSocketDelegate{
         DispatchQueue.main.async {
         let  josnres = String.init(data: data, encoding: .utf8)
         
-       
+        
         if   josnres != nil && josnres! == self.heartbyte{
             
              print("保持心跳中....")
@@ -187,35 +187,41 @@ class SocketClientManager:NSObject,GCDAsyncSocketDelegate{
             
             print("异常断开")
             print(err!.localizedDescription)
-            
-            if  self.reconnectTimer == nil {
-                self.reconnectTimer = Timer.init(timeInterval: self.pushTime, repeats: true, block: { (timer) in
-                    
-                    if   self.curpushindex < self.pushcount {
-                        self.pushTime = self.pushTime * 2.0
-                        timer.fireDate = Date.init(timeIntervalSinceReferenceDate: self.pushTime)
-                        self.curpushindex = self.curpushindex + 1
-                        //
-                        print("尝试第\(self.curpushindex)次重连.......")
-                        self.reconnect()
+            //程序处于前台才尝试重连
+            if !self.isforbackground() {
+                
+                if  self.reconnectTimer == nil {
+                    self.reconnectTimer = Timer.init(timeInterval: self.pushTime, repeats: true, block: { (timer) in
                         
-                    }else{
-                        print("彻底连不上.....尽力了")
-                        self.pushTime = 2.0
-                        timer.invalidate()
+                        if   self.curpushindex < self.pushcount {
+                            self.pushTime = self.pushTime * 2.0
+                            timer.fireDate = Date.init(timeIntervalSinceReferenceDate: self.pushTime)
+                            self.curpushindex = self.curpushindex + 1
+                            //
+                            print("尝试第\(self.curpushindex)次重连.......")
+                            self.reconnect()
+                            
+                        }else{
+                            print("彻底连不上.....尽力了")
+                            self.pushTime = 2.0
+                            timer.invalidate()
+                            
+                        }
                         
-                    }
+                        
+                        
+                    })
                     
                     
+                    RunLoop.current.add(self.reconnectTimer!, forMode: .default)
+                    RunLoop.current.add(self.reconnectTimer!, forMode: .tracking)
                     
-                })
+                }
                 
                 
-                RunLoop.current.add(self.reconnectTimer!, forMode: .default)
-                RunLoop.current.add(self.reconnectTimer!, forMode: .tracking)
                 
             }
-            
+           
             
             if self.connectres != nil{
      
@@ -243,13 +249,7 @@ class SocketClientManager:NSObject,GCDAsyncSocketDelegate{
             
         }
         
-        //程序处于前台才尝试重连
-        if !self.isforbackground() {
             
-            
-            
-            
-        }
       
         
         }
